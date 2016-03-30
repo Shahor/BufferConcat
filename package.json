@@ -1,5 +1,5 @@
 {
-  "name": "buffer-concat",
+  "name": "buffer-concatenator",
   "version": "1.0.0",
   "description": "A tool to concatenate strings using buffers",
   "main": "lib/index.js",
