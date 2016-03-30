@@ -45,7 +45,7 @@ Tape('Concatenates big strings', function (t) {
 
     var Concatenator = new BufferConcat()
 
-    stringStash.forEach(paragraph => {
+    stringStash.forEach(function (paragraph) => {
         Concatenator.append(paragraph)
     })
 
@@ -67,7 +67,7 @@ Tape('Concatenates big strings with utf8 chars', function (t) {
 
     var Concatenator = new BufferConcat()
 
-    stringStash.forEach(paragraph => {
+    stringStash.forEach(function (paragraph) {
         Concatenator.append(paragraph)
     })
 
