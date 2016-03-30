@@ -45,7 +45,7 @@ Tape('Concatenates big strings', function (t) {
 
     var Concatenator = new BufferConcat()
 
-    stringStash.forEach(function (paragraph) => {
+    stringStash.forEach(function (paragraph) {
         Concatenator.append(paragraph)
     })
 
