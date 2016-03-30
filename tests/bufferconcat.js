@@ -4,7 +4,7 @@ var Tape = require('tape')
 ,   BufferConcat = require('../lib/index.js').default
 ,   Faker = require('faker')
 
-Tape('Has the proper API', t => {
+Tape('Has the proper API', function (t) {
     t.plan(3)
 
     var Concatenator = new BufferConcat()
@@ -14,7 +14,7 @@ Tape('Has the proper API', t => {
     t.ok(Concatenator.length !== undefined, "has length property")
 })
 
-Tape('Concatenates', t => {
+Tape('Concatenates', function (t) {
     t.plan(1)
 
     var Concatenator = new BufferConcat()
@@ -24,7 +24,7 @@ Tape('Concatenates', t => {
     t.equal(Concatenator.render(), 'zobzob')
 })
 
-Tape('Concatenates with multi buffers', t => {
+Tape('Concatenates with multi buffers', function (t) {
     t.plan(1)
 
     var Concatenator = new BufferConcat(3)
@@ -34,7 +34,7 @@ Tape('Concatenates with multi buffers', t => {
     t.equal(Concatenator.render(), 'zobzob')
 })
 
-Tape('Concatenates big strings', t => {
+Tape('Concatenates big strings', function (t) {
     t.plan(1)
 
     var stringStash = [
@@ -52,7 +52,7 @@ Tape('Concatenates big strings', t => {
     t.equal(Concatenator.render(), stringStash.join(''), 'big strings')
 })
 
-Tape('Concatenates big strings with utf8 chars', t => {
+Tape('Concatenates big strings with utf8 chars', function (t) {
     t.plan(1)
 
     function accentedParagraph() {
