@@ -5,6 +5,8 @@
 
 # BufferConcat
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Shahor/BufferConcat.svg)](https://greenkeeper.io/)
+
 For when your string needs ain't enough!
 
 But for real, this package here is made as an experiment.
